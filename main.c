@@ -13,11 +13,11 @@ int main(void)
 	printf("%i\n", *ptr);
 	printf("%i\n", number);
 
-	// printf("Address of ptr: %p, Value of number %i\n", ptr, number);
-	// number = 100;
-	// printf("Address of ptr: %p, Value of number %i\n", ptr, number);
-	// ptr = &number;
-	// printf("Address of ptr: %p, Value of number %i\n", ptr, number);
-	// printf("Address of ptr: %i, Value of number %i\n", ptr, number);
+	printf("Address of ptr: %p, Value of number %i\n", ptr, number);
+	number = 100;
+	printf("Address of ptr: %p, Value of number %i\n", ptr, number);
+	ptr = &number;
+	printf("Address of ptr: %p, Value of number %i\n", ptr, number);
+	printf("Address of ptr: %ls, Value of number %i\n", ptr, number);
 	return (0);
 }
