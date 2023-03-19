@@ -6,6 +6,7 @@ int	main(void)
 	const int	limit = 100;
 	int			*ptr;
 	const int	*cptr;
+	int *const	constptr = &num;
 
 	num = 10;
 	ptr = &num;
@@ -14,7 +15,6 @@ int	main(void)
 	printf("Address of limit: %p\n", &limit);
 	printf("Address of ptr: %p\n", &ptr);
 	printf("Address of cptr: %p\n", &cptr);
-	int *const	constptr = &num;
 	printf("Address of constptr: %p\n", &constptr);
 	printf("Value of constptr: %d\n", *constptr);
 	return (0);
