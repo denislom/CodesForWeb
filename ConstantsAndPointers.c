@@ -7,12 +7,17 @@ int	main(void)
 	int			*ptr;
 	const int	*cptr;
 
+
 	num = 10;
 	ptr = &num;
 	cptr = &limit;
-	printf("Adress of num%p\n", &num);
-	printf("Adress of limit%p\n", &limit);
-	printf("Adress of ptr%p\n", &ptr);
-	printf("Adress of cptr%p\n", &cptr);
+	printf("Address of num: %p\n", &num);
+	printf("Address of limit: %p\n", &limit);
+	printf("Address of ptr: %p\n", &ptr);
+	printf("Address of cptr: %p\n", &cptr);
+	int	*const constptr = &num;
+	printf("Address of constptr: %p\n", &constptr);
+	printf("Value of constptr: %d\n", *constptr);
+
 	return (0);
 }
