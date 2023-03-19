@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void	display(char **str)
+void	display(char **ptrtostr)
 {
-	printf("First line of function display: %s\n", *str);
-	*str = "This is our second string.\n";
+	printf("First line of function display: %s\n", *ptrtostr);
+	*ptrtostr = "This is our second string.\n";
 }
 
 int	main(int argc, char **argv)
