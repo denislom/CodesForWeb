@@ -7,7 +7,10 @@ int	main(void)
 
 	ptr = (int *) malloc(sizeof(int));
 	*ptr = 10;
-	printf("%d, %p", *ptr, ptr);
+	printf("Before free\nValue: %d, adress %p\n\n", *ptr, ptr);
 	free(ptr);
+	printf("Address of ptr after free: %p\n", ptr);
+	ptr = NULL;
+	printf("Address of ptr after ptr = NULL, address of ptr: %p\n", ptr);
 	return (0);
 }
