@@ -15,5 +15,5 @@ int	main(void)
 	i1 = 1;
 	i2 = 2;
 	swap(&i1, &i2);
-	retrun (0);
+	return (0);
 }
