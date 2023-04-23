@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//test
 float	average(int *arr, int size)
 {
 	int	sum;
